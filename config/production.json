@@ -1,6 +1,6 @@
 {
-  "port": 5000,
+  "port": 80,
   "mongoUri": "mongodb+srv://OvsMaks:aperefa1234@cluster0.pvkfl.mongodb.net/mern_vladelin?retryWrites=true&w=majority",
   "jwtSecret": "Maks_Ovs_2020",
-  "baseUrl": "http://localhost:5000"
+  "baseUrl": "http://ovsianiuk.ml"
 }
