@@ -28,7 +28,7 @@ async function start() {
       useCreateIndex: true,
     });
 
-    console.log("MONGODB Connected");
+    console.log("MONGO_DB Connected");
   } catch (e) {
     console.log(e);
     process.exit(1);
