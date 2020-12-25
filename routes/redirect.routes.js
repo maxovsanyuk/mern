@@ -3,7 +3,6 @@ const Link = require("../models/Link");
 const router = Router();
 
 const auth = require("../middleware/auth.middleware");
-const config = require("config");
 const shortId = require("shortid");
 
 router.get("/:code", async (req, res) => {
