@@ -24,7 +24,7 @@
       "react-app/jest"
     ]
   },
-  "proxy": "http://localhost:80",
+  "proxy": "http://ovsianiuk.ml",
   "browserslist": {
     "production": [
       ">0.2%",
