@@ -2,9 +2,7 @@ const { Router } = require("express");
 const Link = require("../models/Link");
 const router = Router();
 
-const auth = require("../middleware/auth.middleware");
-
-router.get("/:code", auth, async (req, res) => {
+router.get("/:code", async (req, res) => {
   try {
     const link = await Link.findOne({ code: req.params.code });
 
