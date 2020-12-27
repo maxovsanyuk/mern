@@ -3,9 +3,8 @@ const Link = require("../models/Link");
 const router = Router();
 
 const auth = require("../middleware/auth.middleware");
-const shortId = require("shortid");
 
-router.get("/:code", async (req, res) => {
+router.get("/:code", auth, async (req, res) => {
   try {
     const link = await Link.findOne({ code: req.params.code });
 
