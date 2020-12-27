@@ -8,8 +8,7 @@ const shortId = require("shortid");
 
 router.post("/generate", auth, async (req, res) => {
   try {
-    const baseUrl = "http://ovsianiuk.ml";
-    // config.get("baseUrl");
+    const baseUrl = config.get("baseUrl");
     const { from } = req.body;
 
     const code = shortId.generate();
